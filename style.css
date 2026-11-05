@@ -1,0 +1,120 @@
+/* ---------- Variables: colores y fuentes en un solo lugar ---------- */
+:root {
+  --fondo: #14161a;
+  --superficie: #1e2127;
+  --borde: #2e333b;
+  --texto: #eceff3;
+  --texto-suave: #9aa3af;
+  --sin-rango: #3a3f48;
+
+  --bronce: #cd7f32;
+  --plata: #c4cad2;
+  --oro: #f0b429;
+  --diamante: #4fd8f5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: "Barlow", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  margin: 0;
+}
+
+/* ---------- Encabezado ---------- */
+.encabezado { text-align: center; padding: 2rem 1rem 1rem; }
+.encabezado h1 { font-size: 3rem; letter-spacing: 0.02em; }
+.encabezado p { color: var(--texto-suave); margin: 0.25rem 0 0; }
+
+/* ---------- Layout: una columna en celu, dos en pantalla grande ---------- */
+.contenido {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+@media (min-width: 720px) {
+  .contenido { grid-template-columns: 1fr 1fr; align-items: center; }
+}
+
+/* ---------- Cuerpo SVG ---------- */
+.cuerpo { width: 100%; max-height: 80vh; }
+
+.fijo { fill: var(--borde); }
+
+.musculo {
+  fill: var(--sin-rango);
+  stroke: var(--fondo);
+  stroke-width: 2;
+  cursor: pointer;
+  transition: fill 0.25s, filter 0.25s;
+}
+.musculo:hover,
+.musculo:focus-visible { filter: brightness(1.35); outline: none; }
+
+/* Músculo elegido */
+.musculo.activo { stroke: var(--texto); stroke-width: 3; }
+
+/* El color del músculo depende de su rango (lo pone el JS en data-rango) */
+.musculo[data-rango="bronce"]   { fill: var(--bronce); }
+.musculo[data-rango="plata"]    { fill: var(--plata); }
+.musculo[data-rango="oro"]      { fill: var(--oro); }
+.musculo[data-rango="diamante"] { fill: var(--diamante); }
+
+/* ---------- Panel ---------- */
+.panel {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-height: 220px;
+}
+.vacio { color: var(--texto-suave); margin: 0; }
+
+.formulario h2 { font-size: 2rem; }
+.ejercicio { color: var(--texto-suave); margin: 0 0 1.25rem; }
+
+label { display: block; font-weight: 500; margin-bottom: 0.4rem; }
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  font: inherit;
+  color: var(--texto);
+  background: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+input:focus-visible { outline: 2px solid var(--diamante); outline-offset: 1px; }
+
+button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  font: 600 1.1rem "Barlow Condensed", sans-serif;
+  color: var(--fondo);
+  background: var(--texto);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover { background: #fff; }
+
+.resultado { margin: 1.25rem 0 0; font-size: 1.1rem; }
+.resultado strong { font: 700 1.8rem "Barlow Condensed", sans-serif; }
+.resultado .bronce   { color: var(--bronce); }
+.resultado .plata    { color: var(--plata); }
+.resultado .oro      { color: var(--oro); }
+.resultado .diamante { color: var(--diamante); }
+
+@media (prefers-reduced-motion: reduce) {
+  .musculo { transition: none; }
+}

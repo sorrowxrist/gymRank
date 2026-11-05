@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Rank</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Gym Rank</h1>
+    <p>Tocá un músculo, cargá tu mejor marca y mirá en qué rango estás.</p>
+  </header>
+
+  <main class="contenido">
+    <!-- Cuerpo en SVG: cada forma con data-musculo es clickeable -->
+    <svg class="cuerpo" viewBox="0 0 200 400" role="img" aria-label="Cuerpo humano con músculos seleccionables">
+      <circle class="fijo" cx="100" cy="35" r="22"/>
+      <rect class="fijo" x="92" y="55" width="16" height="14" rx="4"/>
+
+      <ellipse class="musculo" data-musculo="hombros" cx="62" cy="85" rx="16" ry="14" tabindex="0"/>
+      <ellipse class="musculo" data-musculo="hombros" cx="138" cy="85" rx="16" ry="14" tabindex="0"/>
+
+      <rect class="musculo" data-musculo="pecho" x="72" y="78" width="27" height="34" rx="10" tabindex="0"/>
+      <rect class="musculo" data-musculo="pecho" x="101" y="78" width="27" height="34" rx="10" tabindex="0"/>
+
+      <rect class="musculo" data-musculo="abdomen" x="78" y="116" width="44" height="62" rx="10" tabindex="0"/>
+
+      <ellipse class="musculo" data-musculo="biceps" cx="45" cy="130" rx="11" ry="25" tabindex="0"/>
+      <ellipse class="musculo" data-musculo="biceps" cx="155" cy="130" rx="11" ry="25" tabindex="0"/>
+
+      <ellipse class="musculo" data-musculo="antebrazos" cx="38" cy="192" rx="9" ry="27" tabindex="0"/>
+      <ellipse class="musculo" data-musculo="antebrazos" cx="162" cy="192" rx="9" ry="27" tabindex="0"/>
+
+      <rect class="musculo" data-musculo="piernas" x="71" y="184" width="27" height="112" rx="13" tabindex="0"/>
+      <rect class="musculo" data-musculo="piernas" x="102" y="184" width="27" height="112" rx="13" tabindex="0"/>
+
+      <rect class="musculo" data-musculo="gemelos" x="74" y="302" width="21" height="72" rx="10" tabindex="0"/>
+      <rect class="musculo" data-musculo="gemelos" x="105" y="302" width="21" height="72" rx="10" tabindex="0"/>
+    </svg>
+
+    <!-- Panel lateral: se completa desde script.js -->
+    <aside class="panel">
+      <p id="vacio" class="vacio">Elegí un músculo del cuerpo para empezar.</p>
+
+      <form id="formulario" class="formulario" hidden>
+        <h2 id="nombre-musculo"></h2>
+        <p id="ejercicio" class="ejercicio"></p>
+
+        <label for="kg">Tu mejor marca (kg)</label>
+        <input id="kg" type="number" min="1" step="0.5" required>
+
+        <button type="submit">Guardar marca</button>
+
+        <p id="resultado" class="resultado" aria-live="polite"></p>
+      </form>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
