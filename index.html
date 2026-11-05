@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,9 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
-
 <body>
   <!-- Intro estilo VHS: se cierra sola o al tocar / apretar una tecla -->
   <div id="intro" class="intro" role="dialog" aria-label="Pantalla de inicio">
@@ -19,13 +17,13 @@
     <p class="intro-fecha reloj"></p>
     <h1 class="glitch" data-text="GYM RANK">GYM RANK</h1>
     <p class="intro-sub">SISTEMA DE NIVELES DE FUERZA</p>
-    <p class="intro-btn">[ TOCÁ PARA ENTRAR WACHIN ]</p>
+    <p class="intro-btn">[ TOCÁ PARA ENTRAR ]</p>
   </div>
 
   <header class="encabezado">
     <p class="rec"><span class="punto"></span>REC <span class="reloj"></span></p>
     <h1>GYM RANK</h1>
-    <p>Tocá un músculo, cargá tu mejor marca y mirá en qué fokin rango estás.</p>
+    <p>Tocá un músculo, cargá tu mejor marca y mirá en qué rango estás.</p>
   </header>
 
   <main class="contenido">
@@ -33,66 +31,42 @@
          y se espeja con <use> para armar el lado derecho. -->
     <svg class="cuerpo" viewBox="0 0 200 400" role="img" aria-label="Cuerpo humano con músculos seleccionables">
       <defs>
-        <path id="p-brazo" d="M37 98 H61 L59 214 H40 Z" />
-        <path id="p-mano" d="M40 216 H58 C59 228 55 238 49 240 C43 238 39 228 40 216 Z" />
-        <path id="p-pierna" d="M70 180 H99 V374 H76 Z" />
-        <path id="p-pie" d="M76 374 H98 V386 C98 389 96 390 92 390 H80 C76 390 75 388 76 384 Z" />
-        <path id="p-trapecio" d="M88 66 C80 66 72 70 64 72 L70 80 L99 74 V66 Z" />
+        <path id="p-brazo" d="M37 98 H61 L59 214 H40 Z"/>
+        <path id="p-mano" d="M40 216 H58 C59 228 55 238 49 240 C43 238 39 228 40 216 Z"/>
+        <path id="p-pierna" d="M70 180 H99 V374 H76 Z"/>
+        <path id="p-pie" d="M76 374 H98 V386 C98 389 96 390 92 390 H80 C76 390 75 388 76 384 Z"/>
+        <path id="p-trapecio" d="M88 66 C80 66 72 70 64 72 L70 80 L99 74 V66 Z"/>
 
-        <path id="p-hombros" d="M66 73 C52 71 40 78 37 93 C35 104 39 112 45 116 C52 108 58 96 66 86 Z" />
-        <path id="p-pecho" d="M68 84 C78 82 92 84 99 90 V118 C90 124 76 122 66 112 C62 102 63 92 68 84 Z" />
-        <path id="p-biceps" d="M41 121 C48 117 57 117 60 123 C62 137 59 149 55 158 H41 C37 148 37 132 41 121 Z" />
-        <path id="p-antebrazos" d="M40 162 H56 C58 178 56 196 52 214 H43 C39 196 38 178 40 162 Z" />
-        <path id="p-piernas" d="M72 186 C84 183 97 184 99 190 V290 C92 297 82 297 79 290 C68 262 64 224 72 186 Z" />
-        <path id="p-gemelos" d="M78 304 C88 300 96 304 97 312 C97 336 93 356 90 372 H82 C76 352 72 326 78 304 Z" />
+        <path id="p-hombros" d="M66 73 C52 71 40 78 37 93 C35 104 39 112 45 116 C52 108 58 96 66 86 Z"/>
+        <path id="p-pecho" d="M68 84 C78 82 92 84 99 90 V118 C90 124 76 122 66 112 C62 102 63 92 68 84 Z"/>
+        <path id="p-biceps" d="M41 121 C48 117 57 117 60 123 C62 137 59 149 55 158 H41 C37 148 37 132 41 121 Z"/>
+        <path id="p-antebrazos" d="M40 162 H56 C58 178 56 196 52 214 H43 C39 196 38 178 40 162 Z"/>
+        <path id="p-piernas" d="M72 186 C84 183 97 184 99 190 V290 C92 297 82 297 79 290 C68 262 64 224 72 186 Z"/>
+        <path id="p-gemelos" d="M78 304 C88 300 96 304 97 312 C97 336 93 356 90 372 H82 C76 352 72 326 78 304 Z"/>
       </defs>
 
       <!-- Partes que no se tocan -->
-      <path class="fijo"
-        d="M64 70 C80 64 120 64 136 70 L150 84 L140 130 C134 156 128 172 126 184 H74 C72 172 66 156 60 130 L50 84 Z" />
-      <ellipse class="fijo" cx="100" cy="32" rx="17" ry="21" />
-      <path class="fijo" d="M90 50 H110 L112 68 C106 72 94 72 88 68 Z" />
+      <path class="fijo" d="M64 70 C80 64 120 64 136 70 L150 84 L140 130 C134 156 128 172 126 184 H74 C72 172 66 156 60 130 L50 84 Z"/>
+      <ellipse class="fijo" cx="100" cy="32" rx="17" ry="21"/>
+      <path class="fijo" d="M90 50 H110 L112 68 C106 72 94 72 88 68 Z"/>
       <g class="fijo">
-        <use href="#p-brazo" />
-        <use href="#p-brazo" transform="matrix(-1 0 0 1 200 0)" />
-        <use href="#p-mano" />
-        <use href="#p-mano" transform="matrix(-1 0 0 1 200 0)" />
-        <use href="#p-pierna" />
-        <use href="#p-pierna" transform="matrix(-1 0 0 1 200 0)" />
-        <use href="#p-pie" />
-        <use href="#p-pie" transform="matrix(-1 0 0 1 200 0)" />
-        <use href="#p-trapecio" />
-        <use href="#p-trapecio" transform="matrix(-1 0 0 1 200 0)" />
+        <use href="#p-brazo"/><use href="#p-brazo" transform="matrix(-1 0 0 1 200 0)"/>
+        <use href="#p-mano"/><use href="#p-mano" transform="matrix(-1 0 0 1 200 0)"/>
+        <use href="#p-pierna"/><use href="#p-pierna" transform="matrix(-1 0 0 1 200 0)"/>
+        <use href="#p-pie"/><use href="#p-pie" transform="matrix(-1 0 0 1 200 0)"/>
+        <use href="#p-trapecio"/><use href="#p-trapecio" transform="matrix(-1 0 0 1 200 0)"/>
       </g>
 
       <!-- Músculos clickeables -->
-      <g class="musculo" data-musculo="hombros" tabindex="0">
-        <use href="#p-hombros" />
-        <use href="#p-hombros" transform="matrix(-1 0 0 1 200 0)" />
-      </g>
-      <g class="musculo" data-musculo="pecho" tabindex="0">
-        <use href="#p-pecho" />
-        <use href="#p-pecho" transform="matrix(-1 0 0 1 200 0)" />
-      </g>
-      <g class="musculo" data-musculo="biceps" tabindex="0">
-        <use href="#p-biceps" />
-        <use href="#p-biceps" transform="matrix(-1 0 0 1 200 0)" />
-      </g>
-      <g class="musculo" data-musculo="antebrazos" tabindex="0">
-        <use href="#p-antebrazos" />
-        <use href="#p-antebrazos" transform="matrix(-1 0 0 1 200 0)" />
-      </g>
-      <g class="musculo" data-musculo="piernas" tabindex="0">
-        <use href="#p-piernas" />
-        <use href="#p-piernas" transform="matrix(-1 0 0 1 200 0)" />
-      </g>
-      <g class="musculo" data-musculo="gemelos" tabindex="0">
-        <use href="#p-gemelos" />
-        <use href="#p-gemelos" transform="matrix(-1 0 0 1 200 0)" />
-      </g>
+      <g class="musculo" data-musculo="hombros" tabindex="0"><use href="#p-hombros"/><use href="#p-hombros" transform="matrix(-1 0 0 1 200 0)"/></g>
+      <g class="musculo" data-musculo="pecho" tabindex="0"><use href="#p-pecho"/><use href="#p-pecho" transform="matrix(-1 0 0 1 200 0)"/></g>
+      <g class="musculo" data-musculo="biceps" tabindex="0"><use href="#p-biceps"/><use href="#p-biceps" transform="matrix(-1 0 0 1 200 0)"/></g>
+      <g class="musculo" data-musculo="antebrazos" tabindex="0"><use href="#p-antebrazos"/><use href="#p-antebrazos" transform="matrix(-1 0 0 1 200 0)"/></g>
+      <g class="musculo" data-musculo="piernas" tabindex="0"><use href="#p-piernas"/><use href="#p-piernas" transform="matrix(-1 0 0 1 200 0)"/></g>
+      <g class="musculo" data-musculo="gemelos" tabindex="0"><use href="#p-gemelos"/><use href="#p-gemelos" transform="matrix(-1 0 0 1 200 0)"/></g>
       <g class="musculo" data-musculo="abdomen" tabindex="0">
-        <path d="M80 124 C88 128 112 128 120 124 L118 172 C112 180 88 180 82 172 Z" />
-        <path class="detalle" d="M100 127 V177 M84 141 H116 M83 156 H117 M83 168 H117" />
+        <path d="M80 124 C88 128 112 128 120 124 L118 172 C112 180 88 180 82 172 Z"/>
+        <path class="detalle" d="M100 127 V177 M84 141 H116 M83 156 H117 M83 168 H117"/>
       </g>
     </svg>
 
@@ -102,22 +76,32 @@
       <form id="formulario" class="formulario" hidden>
         <h2 id="nombre-musculo"></h2>
 
+        <label for="ejercicio">Ejercicio</label>
+        <select id="ejercicio"></select>
+        <p id="nota" class="nota"></p>
+
         <label for="kg">Tu mejor marca (kg)</label>
         <input id="kg" type="number" min="1" step="0.5" required>
 
         <button type="submit">GUARDAR MARCA</button>
 
         <p id="resultado" class="resultado" aria-live="polite"></p>
+
+        <ul id="tabla-rangos" class="tabla-rangos"></ul>
       </form>
     </aside>
   </main>
 
+  <section class="resumen">
+    <h2>TUS RANGOS</h2>
+    <ul id="resumen" class="lista-resumen"></ul>
+  </section>
+
   <footer class="pie">
     <p>■ STOP · Hecho por <a href="https://github.com/sorrowxrist" target="_blank" rel="noopener">Alan Gimenez</a></p>
-    <p class="pie-chico">©sorrowxrist <span id="anio"></span> · Gym Rank · </p>
+    <p class="pie-chico">© <span id="anio"></span>· Gym Rank ·</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
-
 </html>

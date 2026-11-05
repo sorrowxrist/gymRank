@@ -137,14 +137,14 @@ body::before {
 .vacio { color: var(--cian); margin: 0; }
 
 .formulario h2 { font-size: 2.4rem; letter-spacing: .06em; margin-bottom: 1rem; text-shadow: 2px 0 var(--rojo), -2px 0 var(--cian); }
-label { display: block; margin-bottom: .4rem; color: var(--texto-suave); }
+label { display: block; margin: 1rem 0 .4rem; color: var(--texto-suave); }
 
-input {
+input, select {
   width: 100%; padding: .6rem; font: inherit; font-size: 1.5rem;
   color: var(--texto); background: var(--fondo);
   border: 1px solid var(--borde); border-radius: 4px;
 }
-input:focus-visible { outline: 2px solid var(--cian); outline-offset: 1px; }
+input:focus-visible, select:focus-visible { outline: 2px solid var(--cian); outline-offset: 1px; }
 
 .formulario button {
   margin-top: 1rem; width: 100%; padding: .7rem;
@@ -156,10 +156,35 @@ input:focus-visible { outline: 2px solid var(--cian); outline-offset: 1px; }
 
 .resultado { margin: 1.25rem 0 0; font-size: 1.4rem; }
 .resultado strong { font-size: 2.2rem; font-weight: 400; letter-spacing: .08em; }
-.resultado .bronce   { color: var(--bronce); }
-.resultado .plata    { color: var(--plata); }
-.resultado .oro      { color: var(--oro); }
-.resultado .diamante { color: var(--diamante); }
+.bronce   { color: var(--bronce); }
+.plata    { color: var(--plata); }
+.oro      { color: var(--oro); }
+.diamante { color: var(--diamante); }
+
+/* ---------- Ejercicio, tabla de rangos y resumen ---------- */
+.nota { margin: .3rem 0 0; min-height: 1.3rem; color: var(--texto-suave); font-size: 1.1rem; }
+
+.tabla-rangos { list-style: none; margin: 1.25rem 0 0; padding: 0; border-top: 1px solid var(--borde); }
+.tabla-rangos li { display: flex; justify-content: space-between; padding: .3rem .5rem; border-bottom: 1px solid var(--borde); }
+.tabla-rangos li.actual { background: rgba(8,247,254,.1); outline: 1px solid var(--cian); }
+
+.resumen { max-width: 900px; margin: 1rem auto 0; padding: 0 1rem; }
+.resumen h2 { font-size: 2.2rem; letter-spacing: .08em; margin-bottom: .75rem; text-shadow: 2px 0 var(--rojo), -2px 0 var(--cian); }
+.lista-resumen { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.lista-resumen li { display: flex; justify-content: space-between; align-items: center; padding: .5rem .75rem; background: var(--superficie); border: 1px solid var(--borde); border-radius: 4px; }
+.insignia { letter-spacing: .08em; }
+.insignia[data-rango="ninguno"]  { color: var(--texto-suave); }
+.insignia[data-rango="bronce"]   { color: var(--bronce); }
+.insignia[data-rango="plata"]    { color: var(--plata); }
+.insignia[data-rango="oro"]      { color: var(--oro); }
+.insignia[data-rango="diamante"] { color: var(--diamante); }
+
+/* ---------- Footer ---------- */
+.pie { margin-top: 2rem; padding: 1.5rem 1rem 2rem; text-align: center; border-top: 1px solid var(--borde); color: var(--texto-suave); }
+.pie p { margin: .2rem 0; }
+.pie a { color: var(--cian); text-decoration: none; }
+.pie a:hover, .pie a:focus-visible { color: var(--rojo); text-decoration: underline; }
+.pie-chico { font-size: 1.1rem; }
 
 /* Si el sistema pide menos movimiento, apagamos las animaciones */
 @media (prefers-reduced-motion: reduce) {
@@ -167,17 +192,3 @@ input:focus-visible { outline: 2px solid var(--cian); outline-offset: 1px; }
   .intro-sub, .intro-btn { opacity: 1; }
   body::before { display: none; }
 }
-
-/* ---------- Footer ---------- */
-.pie {
-  margin-top: 2rem;
-  padding: 1.5rem 1rem 2rem;
-  text-align: center;
-  border-top: 1px solid var(--borde);
-  color: var(--texto-suave);
-}
-.pie p { margin: .2rem 0; }
-.pie a { color: var(--cian); text-decoration: none; }
-.pie a:hover,
-.pie a:focus-visible { color: var(--rojo); text-decoration: underline; }
-.pie-chico { font-size: 1.1rem; }
