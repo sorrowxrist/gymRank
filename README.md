@@ -2,7 +2,7 @@
 
 App web para rankear tu fuerza en el gym, músculo por músculo. Tocás una parte del cuerpo, cargás tu mejor marca y la app te dice en qué rango estás: Bronce, Plata, Oro o Diamante.
 
-**Probala acá:** [https://sorrowxrist.github.io/gym-rank](https://sorrowxrist.github.io/gym-rank)
+**Probala acá:** [https://sorrowxrist.github.io/gym-rank](https://sorrowxrist.github.io/gymRank)
 
 <!-- Cuando tengas una captura, guardala en docs/captura.png y descomentá esta línea:
 ![Captura de Gym Rank](docs/captura.png)
