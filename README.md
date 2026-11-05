@@ -2,7 +2,7 @@
 
 App web para rankear tu fuerza en el gym, músculo por músculo. Tocás una parte del cuerpo, cargás tu mejor marca y la app te dice en qué rango estás: Bronce, Plata, Oro o Diamante.
 
-**Probala acá:** [https://sorrowxrist.github.io/gym-rank](https://sorrowxrist.github.io/gymRank)
+**Probala acá:** [https://sorrowxrist.github.io/gymRank](https://sorrowxrist.github.io/gymRank)
 
 <!-- Cuando tengas una captura, guardala en docs/captura.png y descomentá esta línea:
 ![Captura de Gym Rank](docs/captura.png)
@@ -35,18 +35,10 @@ Son valores de ejemplo y se pueden modificar fácilmente.
 
 HTML, CSS y JavaScript puro (sin frameworks ni librerías)
 
-## Cómo usarla en tu compu
-
-1. Descargá o cloná el repositorio
-   ```bash
-   git clone https://github.com/sorrowxrist/gym-rank.git
-   ```
-2. Abrí `index.html` en el navegador
-
 ## Estructura del proyecto
 
 ```
-gym-rank/
+gymRank/
 ├── index.html   # estructura y cuerpo en SVG
 ├── style.css    # estilos y colores de cada rango
 ├── script.js    # datos, lógica de rangos y eventos
