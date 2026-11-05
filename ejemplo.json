@@ -1,0 +1,423 @@
+{
+  "exportado": "2026-11-04T12:00:00.000Z",
+  "musculos": [
+    {
+      "clave": "hombros",
+      "nombre": "Hombros",
+      "ejercicios": [
+        {
+          "id": "press-mancuernas",
+          "nombre": "Press militar con mancuernas",
+          "umbrales": [
+            0,
+            8,
+            14,
+            22
+          ],
+          "marca": 12
+        },
+        {
+          "id": "press-barra",
+          "nombre": "Press militar con barra",
+          "umbrales": [
+            0,
+            25,
+            40,
+            60
+          ],
+          "marca": null
+        },
+        {
+          "id": "elevaciones",
+          "nombre": "Elevaciones laterales",
+          "umbrales": [
+            0,
+            4,
+            8,
+            12
+          ],
+          "marca": null
+        }
+      ]
+    },
+    {
+      "clave": "pecho",
+      "nombre": "Pectorales",
+      "ejercicios": [
+        {
+          "id": "press-mancuernas",
+          "nombre": "Press plano con mancuernas",
+          "umbrales": [
+            0,
+            16,
+            28,
+            40
+          ],
+          "marca": 24
+        },
+        {
+          "id": "press-inclinado",
+          "nombre": "Press inclinado con mancuernas",
+          "umbrales": [
+            0,
+            14,
+            24,
+            36
+          ],
+          "marca": null
+        },
+        {
+          "id": "press-barra",
+          "nombre": "Press plano con barra",
+          "umbrales": [
+            0,
+            40,
+            70,
+            100
+          ],
+          "marca": null
+        },
+        {
+          "id": "pec-deck",
+          "nombre": "Aperturas en máquina (pec deck)",
+          "umbrales": [
+            0,
+            20,
+            35,
+            50
+          ],
+          "marca": null
+        }
+      ]
+    },
+    {
+      "clave": "abdomen",
+      "nombre": "Abdomen",
+      "ejercicios": [
+        {
+          "id": "crunch-polea",
+          "nombre": "Crunch en polea alta",
+          "umbrales": [
+            0,
+            20,
+            35,
+            50
+          ],
+          "marca": 25
+        },
+        {
+          "id": "crunch-maquina",
+          "nombre": "Crunch en máquina",
+          "umbrales": [
+            0,
+            25,
+            45,
+            65
+          ],
+          "marca": null
+        }
+      ]
+    },
+    {
+      "clave": "biceps",
+      "nombre": "Bíceps",
+      "ejercicios": [
+        {
+          "id": "curl-mancuernas",
+          "nombre": "Curl con mancuernas",
+          "umbrales": [
+            0,
+            10,
+            16,
+            23
+          ],
+          "marca": 17
+        },
+        {
+          "id": "curl-martillo",
+          "nombre": "Curl martillo",
+          "umbrales": [
+            0,
+            10,
+            16,
+            22
+          ],
+          "marca": null
+        },
+        {
+          "id": "curl-barra",
+          "nombre": "Curl con barra",
+          "umbrales": [
+            0,
+            20,
+            30,
+            40
+          ],
+          "marca": 22
+        }
+      ]
+    },
+    {
+      "clave": "antebrazos",
+      "nombre": "Antebrazos",
+      "ejercicios": [
+        {
+          "id": "muneca-barra",
+          "nombre": "Curl de muñeca con barra",
+          "umbrales": [
+            0,
+            15,
+            25,
+            35
+          ],
+          "marca": null
+        },
+        {
+          "id": "muneca-mancuerna",
+          "nombre": "Curl de muñeca con mancuerna",
+          "umbrales": [
+            0,
+            6,
+            12,
+            18
+          ],
+          "marca": null
+        },
+        {
+          "id": "curl-inverso",
+          "nombre": "Curl inverso con barra",
+          "umbrales": [
+            0,
+            10,
+            20,
+            30
+          ],
+          "marca": null
+        }
+      ]
+    },
+    {
+      "clave": "piernas",
+      "nombre": "Piernas",
+      "ejercicios": [
+        {
+          "id": "sentadilla",
+          "nombre": "Sentadilla con barra",
+          "umbrales": [
+            0,
+            50,
+            90,
+            130
+          ],
+          "marca": 70
+        },
+        {
+          "id": "prensa",
+          "nombre": "Prensa 45°",
+          "umbrales": [
+            0,
+            100,
+            180,
+            260
+          ],
+          "marca": null
+        },
+        {
+          "id": "extension",
+          "nombre": "Extensión de cuádriceps",
+          "umbrales": [
+            0,
+            30,
+            55,
+            80
+          ],
+          "marca": null
+        },
+        {
+          "id": "zancadas",
+          "nombre": "Zancadas con mancuernas",
+          "umbrales": [
+            0,
+            10,
+            18,
+            28
+          ],
+          "marca": null
+        }
+      ]
+    },
+    {
+      "clave": "gemelos",
+      "nombre": "Gemelos",
+      "ejercicios": [
+        {
+          "id": "talones-maquina",
+          "nombre": "Elevación de talones en máquina",
+          "umbrales": [
+            0,
+            40,
+            80,
+            120
+          ],
+          "marca": null
+        },
+        {
+          "id": "talones-prensa",
+          "nombre": "Elevación de talones en prensa",
+          "umbrales": [
+            0,
+            60,
+            110,
+            160
+          ],
+          "marca": null
+        },
+        {
+          "id": "talones-mancuernas",
+          "nombre": "Elevación de talones con mancuernas",
+          "umbrales": [
+            0,
+            10,
+            20,
+            30
+          ],
+          "marca": null
+        }
+      ]
+    }
+  ],
+  "historial": [
+    {
+      "fecha": "2026-08-10T19:30:00.000Z",
+      "musculo": "biceps",
+      "ejercicio": "curl-mancuernas",
+      "kg": 8
+    },
+    {
+      "fecha": "2026-08-24T19:30:00.000Z",
+      "musculo": "biceps",
+      "ejercicio": "curl-mancuernas",
+      "kg": 10
+    },
+    {
+      "fecha": "2026-09-01T19:30:00.000Z",
+      "musculo": "biceps",
+      "ejercicio": "curl-barra",
+      "kg": 18
+    },
+    {
+      "fecha": "2026-09-14T19:30:00.000Z",
+      "musculo": "biceps",
+      "ejercicio": "curl-mancuernas",
+      "kg": 12
+    },
+    {
+      "fecha": "2026-10-05T19:30:00.000Z",
+      "musculo": "biceps",
+      "ejercicio": "curl-mancuernas",
+      "kg": 14
+    },
+    {
+      "fecha": "2026-10-12T19:30:00.000Z",
+      "musculo": "biceps",
+      "ejercicio": "curl-barra",
+      "kg": 22
+    },
+    {
+      "fecha": "2026-10-26T19:30:00.000Z",
+      "musculo": "biceps",
+      "ejercicio": "curl-mancuernas",
+      "kg": 17
+    },
+    {
+      "fecha": "2026-08-10T19:30:00.000Z",
+      "musculo": "pecho",
+      "ejercicio": "press-mancuernas",
+      "kg": 14
+    },
+    {
+      "fecha": "2026-09-01T19:30:00.000Z",
+      "musculo": "pecho",
+      "ejercicio": "press-mancuernas",
+      "kg": 16
+    },
+    {
+      "fecha": "2026-09-28T19:30:00.000Z",
+      "musculo": "pecho",
+      "ejercicio": "press-mancuernas",
+      "kg": 20
+    },
+    {
+      "fecha": "2026-10-28T19:30:00.000Z",
+      "musculo": "pecho",
+      "ejercicio": "press-mancuernas",
+      "kg": 24
+    },
+    {
+      "fecha": "2026-08-12T19:30:00.000Z",
+      "musculo": "hombros",
+      "ejercicio": "press-mancuernas",
+      "kg": 6
+    },
+    {
+      "fecha": "2026-09-05T19:30:00.000Z",
+      "musculo": "hombros",
+      "ejercicio": "press-mancuernas",
+      "kg": 8
+    },
+    {
+      "fecha": "2026-10-03T19:30:00.000Z",
+      "musculo": "hombros",
+      "ejercicio": "press-mancuernas",
+      "kg": 10
+    },
+    {
+      "fecha": "2026-10-30T19:30:00.000Z",
+      "musculo": "hombros",
+      "ejercicio": "press-mancuernas",
+      "kg": 12
+    },
+    {
+      "fecha": "2026-08-11T19:30:00.000Z",
+      "musculo": "piernas",
+      "ejercicio": "sentadilla",
+      "kg": 40
+    },
+    {
+      "fecha": "2026-09-08T19:30:00.000Z",
+      "musculo": "piernas",
+      "ejercicio": "sentadilla",
+      "kg": 50
+    },
+    {
+      "fecha": "2026-10-06T19:30:00.000Z",
+      "musculo": "piernas",
+      "ejercicio": "sentadilla",
+      "kg": 60
+    },
+    {
+      "fecha": "2026-11-02T19:30:00.000Z",
+      "musculo": "piernas",
+      "ejercicio": "sentadilla",
+      "kg": 70
+    },
+    {
+      "fecha": "2026-08-15T19:30:00.000Z",
+      "musculo": "abdomen",
+      "ejercicio": "crunch-polea",
+      "kg": 15
+    },
+    {
+      "fecha": "2026-09-20T19:30:00.000Z",
+      "musculo": "abdomen",
+      "ejercicio": "crunch-polea",
+      "kg": 20
+    },
+    {
+      "fecha": "2026-10-25T19:30:00.000Z",
+      "musculo": "abdomen",
+      "ejercicio": "crunch-polea",
+      "kg": 25
+    }
+  ]
+}
