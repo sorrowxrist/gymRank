@@ -37,7 +37,7 @@ Son valores de ejemplo y se pueden modificar fácilmente.
 
 ## Tecnologías
 
-HTML, CSS y JavaScript puro (sin frameworks ni librerías)
+HTML, CSS, Python, JSON, y JavaScript puro (sin frameworks ni librerías)
 
 ## Cómo usarla en tu compu
 
@@ -46,16 +46,6 @@ HTML, CSS y JavaScript puro (sin frameworks ni librerías)
    git clone https://github.com/sorrowxrist/gymRank.git
    ```
 2. Abrí `index.html` en el navegador
-
-## Estructura del proyecto
-
-```
-gymRank/
-├── index.html   # estructura y cuerpo en SVG
-├── style.css    # estilos y colores de cada rango
-├── script.js    # datos, lógica de rangos y eventos
-└── README.md
-```
 
 ## Ideas para seguir mejorándola
 
